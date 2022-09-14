@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #18191f;
+  font-family: "Chela One", cursive;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.keyboard {
+  margin: 0 auto;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+  display: block;
+}
+
+.row1 {
+  color: orange;
+}
+
+.row2 {
+  color: aqua;
+}
+
+.row3 {
+  color: violet;
+}
+
+.row4 {
+  color: deeppink;
+}
+
+.key {
+  display: inline-block;
+  position: relative;
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 7px 25px;
+  margin: 10px 5px;
+  transition: 300ms;
+  color: black;
+}
+
+.first {
+  background-color: orange;
+  border: 2px solid orange;
+}
+
+.second {
+  background-color: aqua;
+  border: 2px solid aqua;
+}
+
+.third {
+  background-color: violet;
+  border: 2px solid violet;
+}
+
+.fourth {
+  background-color: deeppink;
+  border: 2px solid deeppink;
+}
+
+.highlighted {
+  color: inherit;
+  background: transparent;
+  animation: 300ms shake linear infinite both;
+}
+
+.press {
+  animation: 300ms press linear both;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(2px, 2px);
+  }
+
+  40% {
+    transform: translate(2px, -2px);
+  }
+
+  60% {
+    transform: translate(-2px, -2px);
+  }
+
+  80% {
+    transform: translate(-2px, 2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+};

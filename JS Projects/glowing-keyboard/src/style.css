@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #18191f;
+  font-family: "Chela One", cursive;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  text-shadow: 0 0 10px #0072ff, 0 0 200px #0072ff, 0 0 200px #0072ff,
+    0 0 200px #0072ff;
+  animation: animate linear 5s infinite;
+}
+
+.keyboard {
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 3px white,
+    2px 2px 3px #00000080, 2px 2px 10px #00000080, 2px 2px 10px #00000080,
+    2px 2px 10px #00000080, 2px 2px 10px #00000080;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.row {
+  display: block;
+}
+
+.key {
+  display: inline-block;
+  z-index: 1000;
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 3px white, 2px 2px 3px #00000080, 2px 2px 10px #00000080, 2px 2px 10px #00000080, 2px 2px 10px #00000080, 2px 2px 10px #00000080;
+  border-radius: 10px;
+  min-width: 2.5em;
+  min-height: 2em;
+  text-shadow: 0 0 10px #0072ff, 0 0 10px #0072ff, 0 0 30px #0072ff,
+    0 0 300px #0072ff;
+  animation: animate linear 5s infinite;
+  transition: all 4s ease-in-out;
+}
+
+.alphabet {
+  top: -20px;
+  min-height: 2.3em;
+  animation-delay: 0.5s;
+}
+
+.backspace {
+  min-width: 8em;
+  animation-delay: 0.7s;
+}
+
+.tab {
+  min-width: 5.7em;
+  animation-delay: 0.9s;
+}
+
+.tab .arrow {
+  margin-left: 15px;
+}
+
+.tab .left {
+  margin-right: 0;
+}
+
+.tab .right {
+  margin-left: 0;
+}
+
+.slash {
+  min-width: 4.6em;
+  animation-delay: 1s;
+}
+
+.caps,
+.enter {
+  min-width: 6.5em;
+  animation-delay: 1.2s;
+}
+
+.shift {
+  min-width: 7.8em;
+  animation-delay: 1.5s;
+}
+
+.shift:first-child .up {
+  margin-left: 10px;
+  margin-right: -10px;
+}
+
+.ctrl,
+.windows,
+.alt,
+.function,
+.right_click {
+  top: 0px;
+  min-width: 4em;
+  animation-delay: 1.8s;
+}
+
+.space {
+  min-width: 13.35em;
+  min-height: 2.3em;
+  animation-delay: 2s;
+}
+
+.arrow {
+  display: inline-block;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  margin-right: 10px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.up {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
+
+.pressed {
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}

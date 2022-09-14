@@ -1,0 +1,146 @@
+body {
+  background: aliceblue;
+  margin: 0;
+  padding: 0;
+  font-family: "Alfa Slab One", cursive;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.alert-danger {
+  margin: 0 auto;
+  background: #ffcccb;
+  color: red;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  width: 70%;
+}
+
+.alert-success {
+  margin: 0 auto;
+  background: #66ff99;
+  color: green;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  width: 70%;
+}
+
+.section-center {
+  text-align: center;
+  display: block;
+  background: white;
+  width: 30%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.To-do h1 {
+  padding-top: 25px;
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.form-control input {
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #f2f8ff;
+  padding: 10px;
+  font-family: "Alfa Slab One", cursive;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.submitbtn {
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  margin-left: -5px;
+  width: 90px;
+  min-height: 35px;
+  background-color: #87cefa;
+  font-family: "Alfa Slab One", cursive;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.submitbtn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.task-container {
+  visibility: hidden;
+}
+
+.show-container {
+  visibility: visible;
+}
+
+.task-list {
+  text-align: left;
+}
+
+.tasks {
+  padding-left: 10px;
+  margin: 0px 100px 0px 55px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.button-container {
+  float: right;
+  margin-right: 50px;
+}
+
+.edit-button {
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.edit-button:hover {
+  background-color: #7fff00;
+}
+
+.delete-button {
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 3px 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: red;
+}
+
+.clearbtn {
+  border: none;
+  background: #ffcccb;
+  border-radius: 15px;
+  color: red;
+  cursor: pointer;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 13px;
+  min-height: 30px;
+  min-width: 200px;
+  margin: 15px 0;
+  transition: background 0.3s ease-in-out;
+}
+
+.clearbtn:hover {
+  background: white;
+  border: 2px solid red;
+}

@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  overflow: auto;
+  height: 1000px;
+}
+
+.main-container{
+  margin: 0 auto;
+}
+
+.container{
+  max-width: 31vh;
+  max-height: 31vh;
+  margin: 40px auto;
+}
+
+.circle{
+  display: inline-block;
+  cursor: pointer;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  background-color: red;
+  transition: all 1s ease-in-out;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+button{
+  cursor: pointer;
+  position: relative;
+  font-family: "Alfa Slab One", cursive;
+  margin-top: 20px;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px double lightgray;
+}
+
+button:nth-child(2){
+  margin-left: 40px;
+}
